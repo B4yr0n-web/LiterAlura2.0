@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3eaf0132-d32a-4ffb-bedc-b917820e55c1)# LiterAlura2.0
+
 
 HOLA! BIENVENIDO AL LITERALURA! Un Challenge propuesto por el curso que he estado realizando de AluraLatam.
 La herramienta se trata de un proyecto spring que consume una api la cual tiene almacenado un monton de libros la idea de esto es que el cliente/persona pueda buscar entre un monton de libros el libro que quiera y la app le va a devolver 
