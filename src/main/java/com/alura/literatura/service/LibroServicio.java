@@ -71,5 +71,7 @@ public class LibroServicio {
     public void listarPorIdioma(String idioma) {
         List<Libro> libros = libroRepositorio.encontrarLibroporIdioma(idioma);
         libros.stream().forEach(System.out::println);
+        enum TipoDeOrdenacion {}
+        libroRepositorio.findAll();
     }
 }

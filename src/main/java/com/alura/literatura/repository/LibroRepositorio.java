@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public interface LibroRepositorio extends JpaRepository <Libro, Long> {
 
-
+    enum TipoDeOrdenacion {}
     Optional<Libro> findById(Long id);
 
 

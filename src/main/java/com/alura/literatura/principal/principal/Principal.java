@@ -32,7 +32,8 @@ public class Principal {
                     1 - Buscar libro por titulo.
                     2 - Libros registrados.
                     3 - Autores registrados.
-                   
+                    4 - Autores vivos en determinado año.
+                    5 - Libros por idioma.
                     
                     0 - Salir.
                     """;
@@ -93,10 +94,14 @@ public class Principal {
     }
 
     private void mostrarLibrosPorIdioma() {
+        enum Idioma {
+            ES, EN
+        }
         System.out.println("Ingrese las dos letras del idioma del libro que desea buscar. \n"+
                 "es, en.");
         String idioma = teclado.nextLine();
         libroServicio.listarPorIdioma(idioma);
+
     }
 
 }

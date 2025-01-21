@@ -1,6 +1,6 @@
 package com.alura.literatura.model;
 
-public enum Idiomas {
+public enum Idioma {
     INGLES("en"),
     CASTELLANO("es"),
     CHINO("zh"),
@@ -12,18 +12,20 @@ public enum Idiomas {
 
     private String idioma;
 
-    Idiomas (String idioma){
+    Idioma(String idioma){
         this.idioma = idioma;
     }
 
-    public static Idiomas fromString(String text) {
-        for (Idiomas idiomas1 : Idiomas.values()) {
+    public static Idioma fromString(String text) {
+        try {
+        for (Idioma idiomas1 : Idioma.values()) {
             if (idiomas1.idioma.equalsIgnoreCase(text)) {
                 return idiomas1;
             }
         }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
         throw new IllegalArgumentException("Ningun idioma encontrado: " + text);
     }
-
-
 }
